@@ -6,7 +6,7 @@ public static class MatrixJsonReader
     public static FixtureResult Read(string path, CommandLine command)
     {
         using var doc = JsonDocument.Parse(File.ReadAllText(path)); var root = doc.RootElement;
-        if (root.ValueKind != JsonValueKind.Object || !root.TryGetProperty("schemaVersion", out var schema) || !schema.TryGetInt32(out int version) || version != 1 ||
+        if (root.ValueKind != JsonValueKind.Object || !root.TryGetProperty("schemaVersion", out var schema) || schema.ValueKind != JsonValueKind.Number || !schema.TryGetInt32(out int version) || version != 1 ||
             !root.TryGetProperty("name", out var name) || name.ValueKind != JsonValueKind.String ||
             !root.TryGetProperty("matrix", out var matrix) || matrix.ValueKind != JsonValueKind.Array) throw new ArgumentException("Input requires schemaVersion=1, name, and matrix rows.");
         int n = matrix.GetArrayLength(); command.CheckSize(n);

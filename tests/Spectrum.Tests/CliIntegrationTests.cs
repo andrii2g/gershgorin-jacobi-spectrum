@@ -89,7 +89,7 @@ public sealed class CliIntegrationTests
         Assert.Equal(JsonValueKind.Null, document.RootElement.GetProperty("eigenvalues").ValueKind);
         Assert.DoesNotContain("NaN", json); Assert.DoesNotContain("Infinity", json);
         foreach (string svg in Directory.GetFiles(Path.Combine(dir, "failure"), "*.svg")) ValidateSvg(svg);
-        foreach (string bad in new[] { "[]", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[]}", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[[1,2],[3,4]]}", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[[1e999]]}" })
+        foreach (string bad in new[] { "[]", "{\"schemaVersion\":\"1\",\"name\":\"a\",\"matrix\":[[1]]}", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[]}", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[[1,2],[3,4]]}", "{\"schemaVersion\":1,\"name\":\"a\",\"matrix\":[[1e999]]}" })
         { File.WriteAllText(input, bad); Assert.Equal(2, Run("solve", "--input", input, "--out", Path.Combine(dir, "invalid"))); Assert.False(Directory.Exists(Path.Combine(dir, "invalid"))); }
     }
 }

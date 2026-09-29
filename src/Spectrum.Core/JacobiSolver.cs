@@ -28,7 +28,7 @@ public static class JacobiSolver
         double threshold = scale == 0 ? options.AbsoluteTolerance : options.AbsoluteTolerance / scale + options.RelativeTolerance * norm;
         var warnings = new List<string>();
         if (options.RelativeTolerance < 16 * StableNorm.UnitRoundoff) warnings.Add("Relative tolerance is demanding (<16u); convergence is not guaranteed.");
-        if (!double.IsFinite(threshold)) warnings.Add("Scaled threshold is unrepresentable (null); the absolute tolerance permits immediate convergence.");
+        if (!double.IsFinite(threshold)) warnings.Add("Scaled threshold is unrepresentable (null); the requested tolerance permits immediate convergence.");
         if (underflows > 0) warnings.Add("Nonzero entries underflowed during scaling; tiny eigenvalues may lose relative accuracy.");
         var recorder = new TraceRecorder(options, n, scale, norm);
         long rotations = 0, visits = 0, comparisons = 0; int sweeps = 0;
@@ -102,6 +102,8 @@ public static class JacobiSolver
             for (int row = 0; row < n; row++) sorted[row, col] = sign * v[row, source];
         }
         if (values.Any(x => !double.IsFinite(x))) { status = SolverStatus.NumericFailure; warnings.Add("Eigenvalues are unrepresentable in original units; eigenpairs omitted."); }
+        if (scale != 0 && Enumerable.Range(0, n).Any(i => scaledValues[i] != 0 && values[i] == 0))
+            warnings.Add("Eigenvalue rescaling underflowed to zero; reported eigenvalues lose tiny-scale accuracy.");
         if (recorder.Samples.Any(s => s.OffNormOriginal is null)) warnings.Add("Original-unit off-norm is unrepresentable and null.");
         bool failed = status == SolverStatus.NumericFailure;
         return new(status, failed ? null : values, failed ? null : scaledValues, failed ? null : sorted, b,

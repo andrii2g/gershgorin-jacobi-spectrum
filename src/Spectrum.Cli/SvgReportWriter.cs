@@ -48,12 +48,13 @@ public static class SvgReportWriter
         }
         foreach (var d in bounds.Disks)
         {
-            string color = Colors[d.RowIndex % Colors.Length]; double radius = (d.RadiusEstimate ?? 0) * pixels, cx = X(d.Center);
+            string color = bounds.Disks.Count <= Colors.Length ? Colors[d.RowIndex % Colors.Length] : $"hsl({F(d.RowIndex * 137.508 % 360)},65%,42%)";
+            double radius = (d.RadiusEstimate ?? 0) * pixels, cx = X(d.Center);
             if (radius == 0)
             {
                 root.Add(Line(cx - 4, cy - 4, cx + 4, cy + 4, color, "zero-radius"), Line(cx - 4, cy + 4, cx + 4, cy - 4, color, "zero-radius"));
             }
-            else root.Add(E("circle", A("class", "disk"), A("cx", cx), A("cy", cy), A("r", radius), A("fill", color), A("fill-opacity", 0.045), A("stroke", color), A("stroke-opacity", 0.65), E("title", $"matrix row {d.RowIndex}")));
+            else root.Add(E("circle", A("class", "disk"), A("cx", cx), A("cy", cy), A("r", radius), A("fill", color), A("fill-opacity", Math.Min(0.045, 0.5 / bounds.Disks.Count)), A("stroke", color), A("stroke-opacity", 0.65), E("title", $"matrix row {d.RowIndex}")));
             double stripY = paneTop + paneHeight + 32 + d.RowIndex % 6 * 3;
             root.Add(Line(X(d.Left ?? d.Center), stripY, X(d.Right ?? d.Center), stripY, color, "interval-strip"));
         }
@@ -70,7 +71,7 @@ public static class SvgReportWriter
         root.Add(Text(25, 30, $"{run.Fixture.Name} · {run.Options.Policy} · {run.Solver.Status}", 22),
             Text(25, 54, "Real symmetric ⇒ real spectrum. Floating-point bounds; eigenvalue estimates are not certified.", 14));
         Panel(root, bounds, run.Solver.EigenvaluesScaled, CoordinateLimits([bounds], run.Solver.EigenvaluesScaled), 20, 70, 1060, 550,
-            "Original matrix disks and real intervals", $"Axes in original units / scale; scale = {run.Solver.Scale.ToString("G6", CultureInfo.InvariantCulture)}. Equal x/y scale; crosses denote zero radius.");
+            "Original matrix disks and real intervals", $"Axes in original units / display unit; display unit = {(run.Solver.Scale == 0 ? 1 : run.Solver.Scale).ToString("G6", CultureInfo.InvariantCulture)}. Equal x/y scale; crosses denote zero radius.");
         return root.ToString();
     }
     public static string Snapshots(Experiment run)
@@ -80,13 +81,13 @@ public static class SvgReportWriter
         var root = Root(1100, height, "Jacobi transformation snapshots");
         root.Add(Text(25, 30, $"{run.Fixture.Name} · {run.Options.Policy} · transformation snapshots", 22),
             Text(25, 54, "Fixed axes across all panels; matrix row ids stay unsorted. Black ticks show final estimates.", 14),
-            Text(25, 76, $"Real symmetric ⇒ real spectrum; axes divided by scale {run.Solver.Scale.ToString("G6", CultureInfo.InvariantCulture)}.", 13));
+            Text(25, 76, $"Real symmetric ⇒ real spectrum; display unit {(run.Solver.Scale == 0 ? 1 : run.Solver.Scale).ToString("G6", CultureInfo.InvariantCulture)} (one for the zero matrix).", 13));
         var limits = CoordinateLimits(bounds, run.Solver.EigenvaluesScaled);
         for (int i = 0; i < snapshots.Count; i++)
         {
             var snapshot = snapshots[i];
             Panel(root, bounds[i], run.Solver.EigenvaluesScaled, limits, i % 2 * 550, 95 + i / 2 * 350, 550, 350,
-                $"Rotation {snapshot.Rotation} · {snapshot.Label}", $"direct off(B) = {StableNorm.OffDiagonal(snapshot.Matrix).ToString("G5", CultureInfo.InvariantCulture)}");
+                $"Rotation {snapshot.Rotation} · {(snapshot.Label.StartsWith("final", StringComparison.Ordinal) ? "final, before sorting" : snapshot.Label)}", $"direct off(B) = {StableNorm.OffDiagonal(snapshot.Matrix).ToString("G5", CultureInfo.InvariantCulture)}");
         }
         return root.ToString();
     }

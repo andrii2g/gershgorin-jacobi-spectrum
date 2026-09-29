@@ -20,6 +20,8 @@ public static class SpectrumDiagnostics
     {
         var v = result.Eigenvectors; if (v is null || result.EigenvaluesScaled is null) return null;
         int n = original.Order; var b = original.Clone(); var final = result.Transformed;
+        // Validate the exported eigenvalues, including their final rescaling roundoff.
+        var scaledValues = result.Eigenvalues!.Select(value => result.Scale == 0 ? 0 : value / result.Scale).ToArray();
         if (result.Scale != 0) for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) b[i, j] /= result.Scale;
         var bounds = GershgorinBounds.Analyze(b); var entries = new List<EigenpairDiagnostic>(); var warnings = new List<string>();
         var residual = new StableNorm.Accumulator(); var reconstruction = new StableNorm.Accumulator();
@@ -32,17 +34,17 @@ public static class SpectrumDiagnostics
             var ri = new StableNorm.Accumulator(); var vn = new StableNorm.Accumulator();
             for (int row = 0; row < n; row++)
             {
-                double value = StableNorm.Sum(Enumerable.Range(0, n).Select(k => b[row, k] * v[k, col])) - result.EigenvaluesScaled[col] * v[row, col];
+                double value = StableNorm.Sum(Enumerable.Range(0, n).Select(k => b[row, k] * v[k, col])) - scaledValues[col] * v[row, col];
                 ri.Add(value); residual.Add(value); vn.Add(v[row, col]);
             }
-            double distance = GershgorinBounds.DistanceToUnion(result.EigenvaluesScaled[col], bounds.MergedIntervals);
+            double distance = GershgorinBounds.DistanceToUnion(scaledValues[col], bounds.MergedIntervals);
             if (distance == 0) strict++; if (distance <= tolerance) contained++;
             double? absolute = GershgorinBounds.Finite(ri.Norm * result.Scale);
             if (absolute is null) warnings.Add($"Eigenpair {col}: absolute residual is unrepresentable and null.");
             entries.Add(new(col, absolute, ri.Norm / divisor, vn.Norm, distance, distance <= tolerance));
         }
         for (int i = 0; i < n; i++) for (int j = 0; j < n; j++)
-            reconstruction.Add(b[i, j] - StableNorm.Sum(Enumerable.Range(0, n).Select(k => v[i, k] * result.EigenvaluesScaled[k] * v[j, k])));
+            reconstruction.Add(b[i, j] - StableNorm.Sum(Enumerable.Range(0, n).Select(k => v[i, k] * scaledValues[k] * v[j, k])));
         double trace0 = StableNorm.Sum(Enumerable.Range(0, n).Select(i => b[i, i]));
         double trace1 = StableNorm.Sum(Enumerable.Range(0, n).Select(i => final[i, i]));
         double td = Math.Abs(trace1 - trace0), fd = Math.Abs(StableNorm.Frobenius(final) - norm);

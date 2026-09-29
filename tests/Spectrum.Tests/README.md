@@ -1,2 +1,3 @@
-# Test project creation
-Task 01 creates the xUnit project here. Do not treat this directory as a passing test suite. See docs/TEST_PLAN.md for required tests and numerical oracles. Add the project to GershgorinJacobiSpectrum.slnx and reference Spectrum.Core. CLI integration tests may invoke a prebuilt CLI via dotnet or reference a testable command runner. Pin package versions and generate real lock files after restore.
+# Test suite
+
+The .NET 10 xUnit project tests manual numerical kernels, analytical spectra, all five fixture families, stopping states, diagnostics, CLI contracts, invariant exports, SVG geometry, and separate benchmark timing. Run `dotnet test -c Release` from the repository root. See docs/VALIDATION.md for the recorded release evidence and docs/TEST_PLAN.md for acceptance ceilings.

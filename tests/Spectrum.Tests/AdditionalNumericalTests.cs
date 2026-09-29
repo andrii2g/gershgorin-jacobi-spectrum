@@ -45,4 +45,17 @@ public sealed class AdditionalNumericalTests
         for (int i = 0; i < 3; i++) { Assert.Equal(radii[i], bounds.Disks[i].RadiusEstimate); Assert.True(bounds.Disks[i].RadiusUpper >= radii[i]); }
         Assert.Equal(3.5, bounds.UnionLength); Assert.Equal(8.125, bounds.EnvelopeWidth);
     }
+    [Fact] public void ResidualsValidateExportedSubnormalEigenvalues()
+    {
+        // A subnormal matrix makes final eigenvalue quantization visible. The oracle uses
+        // the exported eigenvalues, not the unrounded diagonal of the transformed matrix.
+        var a = DenseMatrix.FromRows([1e-322, 5e-324], [5e-324, 2e-322]);
+        var options = new JacobiOptions(); var result = JacobiSolver.Solve(a, options);
+        var d = SpectrumDiagnostics.Analyze(a, result, options)!; var v = result.Eigenvectors!;
+        var residual = new StableNorm.Accumulator();
+        for (int i = 0; i < 2; i++) for (int col = 0; col < 2; col++)
+            residual.Add(a[i, 0] / result.Scale * v[0, col] + a[i, 1] / result.Scale * v[1, col] - result.Eigenvalues![col] / result.Scale * v[i, col]);
+        Assert.InRange(Math.Abs(d.AggregateRelativeResidual - residual.Norm / result.InitialNormScaled), 0, 1e-16);
+        Assert.True(d.AggregateRelativeResidual > 1e-5);
+    }
 }
