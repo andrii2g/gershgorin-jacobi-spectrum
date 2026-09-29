@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="src/Spectrum.Core/Spectrum.Core.csproj" />
+  <Folder Name="/tests/">
+    <Project Path="tests/Spectrum.Tests/Spectrum.Tests.csproj" />
+  </Folder>
   <Project Path="src/Spectrum.Cli/Spectrum.Cli.csproj" />
 </Solution>
