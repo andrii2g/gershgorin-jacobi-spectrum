@@ -1,0 +1,289 @@
+<svg viewBox="0 0 1100 1150" width="1100" height="1150" font-family="sans-serif" fill="#172033" xmlns="http://www.w3.org/2000/svg">
+  <title>Jacobi transformation snapshots</title>
+  <rect width="1100" height="1150" fill="#ffffff" />
+  <text x="25" y="30" font-size="22">random-6 · MaxAbsolute · transformation snapshots</text>
+  <text x="25" y="54" font-size="14">Fixed axes across all panels; matrix row ids stay unsorted. Black ticks show final estimates.</text>
+  <text x="25" y="76" font-size="13">Real symmetric ⇒ real spectrum; display unit 0.377197 (one for the zero matrix).</text>
+  <text x="15" y="118" font-size="17">Rotation 0 · initial</text>
+  <text x="15" y="140" font-size="12">direct off(B) = 3.024</text>
+  <line x1="55" y1="261" x2="515" y2="261" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="279.75426780774598" y1="165" x2="279.75426780774598" y2="357" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="482" y="253" font-size="12">Re</text>
+  <text x="55" y="160" font-size="12">Im</text>
+  <line x1="194.79807324800717" y1="258" x2="194.79807324800717" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="179.79807324800717" y="377" font-size="11">-3.447</text>
+  <line x1="239.8990366240036" y1="258" x2="239.8990366240036" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="224.8990366240036" y="377" font-size="11">-1.617</text>
+  <line x1="285" y1="258" x2="285" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="270" y="377" font-size="11">0.2128</text>
+  <line x1="330.10096337599646" y1="258" x2="330.10096337599646" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="315.10096337599646" y="377" font-size="11">2.043</text>
+  <line x1="375.2019267519928" y1="258" x2="375.2019267519928" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="360.2019267519928" y="377" font-size="11">3.873</text>
+  <circle class="disk" cx="292.6419267519928" cy="261" r="82.560000000000002" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="210.08192675199282" y1="389" x2="375.2019267519928" y2="389" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="264.73098361858786" cy="261" r="64.787543737990504" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="199.9434398805974" y1="392" x2="329.51852735657837" y2="392" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="279.38023585881837" cy="261" r="38.444502287645712" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="240.93573357117265" y1="395" x2="317.82473814646409" y2="395" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="263.93231891513949" cy="261" r="38.956770188668436" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="224.97554872647106" y1="398" x2="302.88908910380792" y2="398" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="258.06334261774555" cy="261" r="63.265269369738348" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="194.79807324800717" y1="401" x2="321.3286119874839" y2="401" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="304.15289611640139" cy="261" r="54.520875719532413" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="249.632020396869" y1="404" x2="358.67377183593385" y2="404" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="226.41766343398578" y1="254" x2="226.41766343398578" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="245.52610535293422" y1="254" x2="245.52610535293422" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="274.32749772300417" y1="254" x2="274.32749772300417" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="281.18665601578584" y1="254" x2="281.18665601578584" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="304.83686896838299" y1="254" x2="304.83686896838299" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="330.60691238459253" y1="254" x2="330.60691238459253" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="15" y="431" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+  <text x="565" y="118" font-size="17">Rotation 1 · intermediate</text>
+  <text x="565" y="140" font-size="12">direct off(B) = 2.673</text>
+  <line x1="605" y1="261" x2="1065" y2="261" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="829.75426780774592" y1="165" x2="829.75426780774592" y2="357" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="1032" y="253" font-size="12">Re</text>
+  <text x="605" y="160" font-size="12">Im</text>
+  <line x1="744.7980732480072" y1="258" x2="744.7980732480072" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="729.7980732480072" y="377" font-size="11">-3.447</text>
+  <line x1="789.89903662400354" y1="258" x2="789.89903662400354" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="774.89903662400354" y="377" font-size="11">-1.617</text>
+  <line x1="835" y1="258" x2="835" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="820" y="377" font-size="11">0.2128</text>
+  <line x1="880.10096337599646" y1="258" x2="880.10096337599646" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="865.10096337599646" y="377" font-size="11">2.043</text>
+  <line x1="925.2019267519928" y1="258" x2="925.2019267519928" y2="264" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="910.2019267519928" y="377" font-size="11">3.873</text>
+  <circle class="disk" cx="855.45854230907219" cy="261" r="45.147464634048603" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="810.31107767502351" y1="389" x2="900.60600694312075" y2="389" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="814.73098361858786" cy="261" r="62.099211620506047" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="752.63177199808183" y1="392" x2="876.83019523909388" y2="392" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="829.38023585881831" cy="261" r="41.039401223935641" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="788.34083463488275" y1="395" x2="870.41963708275398" y2="395" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="813.93231891513949" cy="261" r="34.476636315774506" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="779.45568259936499" y1="398" x2="848.40895523091399" y2="398" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="795.24672706066622" cy="261" r="47.871512099367017" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="747.37521496129921" y1="401" x2="843.11823916003323" y2="401" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="854.15289611640139" cy="261" r="55.580991552446413" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="798.57190456395506" y1="404" x2="909.73388766884784" y2="404" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="776.41766343398581" y1="254" x2="776.41766343398581" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="795.52610535293422" y1="254" x2="795.52610535293422" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="824.32749772300417" y1="254" x2="824.32749772300417" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="831.18665601578584" y1="254" x2="831.18665601578584" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="854.83686896838299" y1="254" x2="854.83686896838299" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="880.60691238459253" y1="254" x2="880.60691238459253" y2="268" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="565" y="431" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+  <text x="15" y="468" font-size="17">Rotation 2 · intermediate</text>
+  <text x="15" y="490" font-size="12">direct off(B) = 2.3373</text>
+  <line x1="55" y1="611" x2="515" y2="611" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="279.75426780774598" y1="515" x2="279.75426780774598" y2="707" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="482" y="603" font-size="12">Re</text>
+  <text x="55" y="510" font-size="12">Im</text>
+  <line x1="194.79807324800717" y1="608" x2="194.79807324800717" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="179.79807324800717" y="727" font-size="11">-3.447</text>
+  <line x1="239.8990366240036" y1="608" x2="239.8990366240036" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="224.8990366240036" y="727" font-size="11">-1.617</text>
+  <line x1="285" y1="608" x2="285" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="270" y="727" font-size="11">0.2128</text>
+  <line x1="330.10096337599646" y1="608" x2="330.10096337599646" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="315.10096337599646" y="727" font-size="11">2.043</text>
+  <line x1="375.2019267519928" y1="608" x2="375.2019267519928" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="360.2019267519928" y="727" font-size="11">3.873</text>
+  <circle class="disk" cx="305.45854230907219" cy="611" r="46.06990743805283" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="259.38863487101935" y1="739" x2="351.52844974712502" y2="739" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="264.73098361858786" cy="611" r="63.403331394245576" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="201.32765222434227" y1="742" x2="328.13431501283344" y2="742" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="279.38023585881837" cy="611" r="42.264533568503516" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="237.11570229031486" y1="745" x2="321.64476942732188" y2="745" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="279.04384998915236" cy="611" r="20.849591996018976" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="258.19425799313342" y1="748" x2="299.89344198517136" y2="748" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="230.13519598665329" cy="611" r="26.548900385065352" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="203.58629560158795" y1="751" x2="256.68409637171862" y2="751" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="304.15289611640139" cy="611" r="62.378148241620607" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="241.77474787478081" y1="754" x2="366.53104435802203" y2="754" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="226.41766343398578" y1="604" x2="226.41766343398578" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="245.52610535293422" y1="604" x2="245.52610535293422" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="274.32749772300417" y1="604" x2="274.32749772300417" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="281.18665601578584" y1="604" x2="281.18665601578584" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="304.83686896838299" y1="604" x2="304.83686896838299" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="330.60691238459253" y1="604" x2="330.60691238459253" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="15" y="781" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+  <text x="565" y="468" font-size="17">Rotation 4 · intermediate</text>
+  <text x="565" y="490" font-size="12">direct off(B) = 1.8016</text>
+  <line x1="605" y1="611" x2="1065" y2="611" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="829.75426780774592" y1="515" x2="829.75426780774592" y2="707" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="1032" y="603" font-size="12">Re</text>
+  <text x="605" y="510" font-size="12">Im</text>
+  <line x1="744.7980732480072" y1="608" x2="744.7980732480072" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="729.7980732480072" y="727" font-size="11">-3.447</text>
+  <line x1="789.89903662400354" y1="608" x2="789.89903662400354" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="774.89903662400354" y="727" font-size="11">-1.617</text>
+  <line x1="835" y1="608" x2="835" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="820" y="727" font-size="11">0.2128</text>
+  <line x1="880.10096337599646" y1="608" x2="880.10096337599646" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="865.10096337599646" y="727" font-size="11">2.043</text>
+  <line x1="925.2019267519928" y1="608" x2="925.2019267519928" y2="614" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="910.2019267519928" y="727" font-size="11">3.873</text>
+  <circle class="disk" cx="876.75698471734472" cy="611" r="28.752527126722438" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="848.00445759062222" y1="739" x2="905.50951184406711" y2="739" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="807.23418415318531" cy="611" r="35.39174919058788" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="771.84243496259751" y1="742" x2="842.62593334377323" y2="742" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="829.38023585881831" cy="611" r="41.442221936875463" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="787.93801392194291" y1="745" x2="870.82245779569382" y2="745" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="829.04384998915236" cy="611" r="21.206883588067541" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="807.83696640108485" y1="748" x2="850.25073357721988" y2="748" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="780.13519598665334" cy="611" r="30.893790911594209" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="749.24140507505911" y1="751" x2="811.02898689824747" y2="751" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="840.3512531735314" cy="611" r="44.473485658316534" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="795.87776751521494" y1="754" x2="884.82473883184798" y2="754" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="776.41766343398581" y1="604" x2="776.41766343398581" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="795.52610535293422" y1="604" x2="795.52610535293422" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="824.32749772300417" y1="604" x2="824.32749772300417" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="831.18665601578584" y1="604" x2="831.18665601578584" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="854.83686896838299" y1="604" x2="854.83686896838299" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="880.60691238459253" y1="604" x2="880.60691238459253" y2="618" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="565" y="781" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+  <text x="15" y="818" font-size="17">Rotation 8 · intermediate</text>
+  <text x="15" y="840" font-size="12">direct off(B) = 0.96648</text>
+  <line x1="55" y1="961" x2="515" y2="961" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="279.75426780774598" y1="865" x2="279.75426780774598" y2="1057" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="482" y="953" font-size="12">Re</text>
+  <text x="55" y="860" font-size="12">Im</text>
+  <line x1="194.79807324800717" y1="958" x2="194.79807324800717" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="179.79807324800717" y="1077" font-size="11">-3.447</text>
+  <line x1="239.8990366240036" y1="958" x2="239.8990366240036" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="224.8990366240036" y="1077" font-size="11">-1.617</text>
+  <line x1="285" y1="958" x2="285" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="270" y="1077" font-size="11">0.2128</text>
+  <line x1="330.10096337599646" y1="958" x2="330.10096337599646" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="315.10096337599646" y="1077" font-size="11">2.043</text>
+  <line x1="375.2019267519928" y1="958" x2="375.2019267519928" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="360.2019267519928" y="1077" font-size="11">3.873</text>
+  <circle class="disk" cx="329.95131356737858" cy="961" r="10.705992385025384" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="319.24532118235317" y1="1089" x2="340.65730595240393" y2="1089" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="247.87637300618221" cy="961" r="10.684686618864198" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="237.19168638731801" y1="1092" x2="258.56105962504643" y2="1092" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="274.81083365436922" cy="961" r="13.75281161906517" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="261.05802203530402" y1="1095" x2="288.56364527343436" y2="1095" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="279.04384998915236" cy="961" r="23.468229962491105" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="255.57562002666126" y1="1098" x2="302.5120799516435" y2="1098" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="228.63295122151575" cy="961" r="17.099267068020342" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="211.53368415349541" y1="1101" x2="245.73221828953609" y2="1101" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="302.58638244008733" cy="961" r="16.825456223607627" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="285.76092621647973" y1="1104" x2="319.41183866369499" y2="1104" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="226.41766343398578" y1="954" x2="226.41766343398578" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="245.52610535293422" y1="954" x2="245.52610535293422" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="274.32749772300417" y1="954" x2="274.32749772300417" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="281.18665601578584" y1="954" x2="281.18665601578584" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="304.83686896838299" y1="954" x2="304.83686896838299" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="330.60691238459253" y1="954" x2="330.60691238459253" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="15" y="1131" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+  <text x="565" y="818" font-size="17">Rotation 51 · final, before sorting</text>
+  <text x="565" y="840" font-size="12">direct off(B) = 1.391E-12</text>
+  <line x1="605" y1="961" x2="1065" y2="961" stroke="#64748b" stroke-width="1.6000000000000001" class="real-axis" stroke-dasharray="" />
+  <line x1="829.75426780774592" y1="865" x2="829.75426780774592" y2="1057" stroke="#cbd5e1" stroke-width="1.6000000000000001" class="imaginary-axis" stroke-dasharray="4 4" />
+  <text x="1032" y="953" font-size="12">Re</text>
+  <text x="605" y="860" font-size="12">Im</text>
+  <line x1="744.7980732480072" y1="958" x2="744.7980732480072" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="729.7980732480072" y="1077" font-size="11">-3.447</text>
+  <line x1="789.89903662400354" y1="958" x2="789.89903662400354" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="774.89903662400354" y="1077" font-size="11">-1.617</text>
+  <line x1="835" y1="958" x2="835" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="820" y="1077" font-size="11">0.2128</text>
+  <line x1="880.10096337599646" y1="958" x2="880.10096337599646" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="865.10096337599646" y="1077" font-size="11">2.043</text>
+  <line x1="925.2019267519928" y1="958" x2="925.2019267519928" y2="964" stroke="#64748b" stroke-width="1.6000000000000001" class="" stroke-dasharray="" />
+  <text x="910.2019267519928" y="1077" font-size="11">3.873</text>
+  <circle class="disk" cx="880.60691238459253" cy="961" r="2.4040754503802001E-11" fill="#2563eb" fill-opacity="0.044999999999999998" stroke="#2563eb" stroke-opacity="0.65000000000000002">
+    <title>matrix row 0</title>
+  </circle>
+  <line x1="880.60691238456855" y1="1089" x2="880.60691238461663" y2="1089" stroke="#2563eb" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="795.52610535293422" cy="961" r="3.2276868081178642E-12" fill="#d97706" fill-opacity="0.044999999999999998" stroke="#d97706" stroke-opacity="0.65000000000000002">
+    <title>matrix row 1</title>
+  </circle>
+  <line x1="795.52610535293104" y1="1092" x2="795.52610535293741" y2="1092" stroke="#d97706" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="824.32749772300417" cy="961" r="2.4040502880655097E-11" fill="#059669" fill-opacity="0.044999999999999998" stroke="#059669" stroke-opacity="0.65000000000000002">
+    <title>matrix row 2</title>
+  </circle>
+  <line x1="824.32749772298007" y1="1095" x2="824.32749772302816" y2="1095" stroke="#059669" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="831.18665601578584" cy="961" r="3.2365342042297474E-12" fill="#9333ea" fill-opacity="0.044999999999999998" stroke="#9333ea" stroke-opacity="0.65000000000000002">
+    <title>matrix row 3</title>
+  </circle>
+  <line x1="831.18665601578255" y1="1098" x2="831.18665601578903" y2="1098" stroke="#9333ea" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="776.41766343398581" cy="961" r="1.4614799534479767E-13" fill="#dc2626" fill-opacity="0.044999999999999998" stroke="#dc2626" stroke-opacity="0.65000000000000002">
+    <title>matrix row 4</title>
+  </circle>
+  <line x1="776.41766343398558" y1="1101" x2="776.41766343398592" y2="1101" stroke="#dc2626" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <circle class="disk" cx="854.83686896838299" cy="961" r="1.5524733512941918E-13" fill="#0891b2" fill-opacity="0.044999999999999998" stroke="#0891b2" stroke-opacity="0.65000000000000002">
+    <title>matrix row 5</title>
+  </circle>
+  <line x1="854.83686896838276" y1="1104" x2="854.8368689683831" y2="1104" stroke="#0891b2" stroke-width="1.6000000000000001" class="interval-strip" stroke-dasharray="" />
+  <line x1="776.41766343398581" y1="954" x2="776.41766343398581" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="795.52610535293422" y1="954" x2="795.52610535293422" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="824.32749772300417" y1="954" x2="824.32749772300417" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="831.18665601578584" y1="954" x2="831.18665601578584" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="854.83686896838299" y1="954" x2="854.83686896838299" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <line x1="880.60691238459253" y1="954" x2="880.60691238459253" y2="968" stroke="#111827" stroke-width="1.6000000000000001" class="eigenvalue" stroke-dasharray="" />
+  <text x="565" y="1131" font-size="11">Colored circles/strips: matrix rows · black ticks: eigenpair estimates</text>
+</svg>
