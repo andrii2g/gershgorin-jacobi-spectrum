@@ -1,0 +1,2 @@
+# Test project creation
+Task 01 creates the xUnit project here. Do not treat this directory as a passing test suite. See docs/TEST_PLAN.md for required tests and numerical oracles. Add the project to GershgorinJacobiSpectrum.slnx and reference Spectrum.Core. CLI integration tests may invoke a prebuilt CLI via dotnet or reference a testable command runner. Pin package versions and generate real lock files after restore.

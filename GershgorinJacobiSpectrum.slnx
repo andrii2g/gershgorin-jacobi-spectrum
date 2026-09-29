@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Spectrum.Core/Spectrum.Core.csproj" />
+  <Project Path="src/Spectrum.Cli/Spectrum.Cli.csproj" />
+</Solution>
