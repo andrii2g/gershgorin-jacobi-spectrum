@@ -39,6 +39,8 @@ public sealed class DenseMatrix
         ArgumentNullException.ThrowIfNull(rows);
         int length = CheckedLength(rows.Length);
         if (rows.Any(r => r is null || r.Length != rows.Length)) throw new ArgumentException("Rows must form a square.", nameof(rows));
+        for (int i = 0; i < rows.Length; i++) for (int j = 0; j < rows.Length; j++)
+            if (!double.IsFinite(rows[i][j]) || rows[i][j] != rows[j][i]) throw new ArgumentException("Entries must be finite and exactly symmetric.", nameof(rows));
         var flat = new double[length];
         for (int i = 0; i < rows.Length; i++) rows[i].CopyTo(flat, i * rows.Length);
         return FromRowMajor(rows.Length, flat);

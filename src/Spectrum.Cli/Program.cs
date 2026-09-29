@@ -1,2 +1,4 @@
-Console.Error.WriteLine("Implementation kit: execute CODEX_IMPLEMENTATION.md to implement the solver and CLI.");
-return 3;
+using Spectrum.Cli;
+using var cancellation = new CancellationTokenSource();
+Console.CancelKeyPress += (_, e) => { e.Cancel = true; cancellation.Cancel(); };
+return CliApplication.Run(args, Console.Out, Console.Error, cancellation.Token);
